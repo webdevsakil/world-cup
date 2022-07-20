@@ -1,0 +1,385 @@
+/* 
+  css index
+1. Theme CSS
+2. layout
+2. Header
+3. blog
+4. footer
+5. animations
+6. upcoming match
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color: #fff;
+}
+h2 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+    transition: color ease-out 0.4s;
+    margin-bottom: 10px;
+}
+h2:hover {
+    color: #dd0000;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+/* colors */
+.bg-black {
+    background: #161616;
+}
+.text-white {
+    color: #ffffff;
+}
+/* radius */
+.rounded-30 {
+    border-radius: 30px;
+}
+/* align */
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: left;
+}
+.text-end {
+    text-align: end;
+}
+/* button */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding: 16px 25px;
+    transition: all ease-in 0.4s;
+}
+.btn-warning {
+    background: #dd0000;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease-in-out 0.4s;
+}
+.btn-warning:hover {
+    background: #000;
+    color: #fff;
+}
+.btn-link {
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+    background: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 17px 0px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.4s;
+}
+.btn-link:hover {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+.btn-link:active {
+    background: #dd0000;
+    color: #fff;
+}
+.btn-md {
+    min-width: 130px;
+}
+.btn.btn-md {
+    padding: 12px 24px;
+}
+.btn-cat {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161616;
+    line-height: 24px;
+    text-transform: capitalize;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 4px 16px;
+    transition: all ease-in 0.4s;
+}
+.btn-cat:hover {
+    background: #dd0000f7;
+    color: #fff;
+}
+.active {
+    background: #dd0000;
+    color: #fff;
+}
+
+/* spacing */
+.pt-30 {
+    padding-top: 30px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.py-30 {
+    padding: 30px 0px;
+}
+.py-120 {
+    padding: 120px 0px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pb-55 {
+    padding-bottom: 55px;
+}
+/* header */
+.header-left {
+    padding: 100px 0px 0px 100px;
+}
+.header-left .btn i {
+    margin-left: 10px;
+}
+.header-left .btn:hover {
+    background: #000;
+    color: #fff;
+}
+.hero-img img {
+    margin-bottom: -7px;
+}
+
+/* blog */
+.menu-group {
+    border-radius: 10px;
+    padding: 30px;
+}
+.menu-group a:not(:last-child) {
+    margin-bottom: 30px;
+}
+.card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img:hover {
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+.card .card-body {
+    padding: 20px;
+}
+.card-top {
+    overflow: hidden;
+}
+.card .card-body .btn-cat {
+    margin-bottom: 10px;
+}
+.card .card-body h2 {
+    font-weight: 600;
+}
+.card-footer ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #16161673;
+    margin-right: 30px;
+}
+.card-footer ul li i {
+    margin-right: 10px;
+    color: #16161689;
+    transition: color ease-in 0.2s;
+}
+.card-footer ul li:hover,
+.card-footer ul li:hover i {
+    color: #dd0000;
+}
+/* footer */
+footer {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.footer-title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    background: #ffffff1a;
+}
+.footer-nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #b9b9b9;
+    text-transform: capitalize;
+    display: block;
+    margin: 0px 25px;
+    transition: color ease-in 0.5;
+}
+.footer-nav ul li a:hover {
+    color: #dd0000;
+}
+.social-nav ul li a {
+    height: 50px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.976);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid #dd00002e;
+    box-shadow: 1px 2px 2px 1px #dd00001e;
+    transition: all ease-in-out 0.4s;
+}
+.social-nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.806);
+    color: #fff;
+}
+
+/* upcoming match */
+.small-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+.flag {
+    display: flex;
+}
+.flag span {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 22px;
+}
+.small-card-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+}
+.date {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    color: #4d4d4d;
+}
+/* animations */
+.fade-right {
+    animation-name: fade-right;
+    animation-duration: 1s;
+}
+.zoom-out {
+    animation-name: zoom-out;
+}
+.zoom {
+    animation-name: zoom;
+}
+.duration-1 {
+    animation-duration: 1s;
+}
+.duration-1-5 {
+    animation-duration: 1.5s;
+}
+.duration-1 {
+    animation-duration: 1s;
+}
+.duration-2 {
+    animation-duration: 2s;
+}
+.duration-2-5 {
+    animation-duration: 2.5s;
+}
+.duration-3 {
+    animation-duration: 3s;
+}
+.delay {
+    animation-delay: 3.5s;
+}
+.delay-2 {
+    animation-delay: 2s;
+}
+.delay-2-5 {
+    animation-delay: 2.5s;
+}
+.delay-3 {
+    animation-delay: 3s;
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes zoom-out {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}

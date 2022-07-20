@@ -1,0 +1,126 @@
+/* small device */
+@media only screen and (min-width: 320px) {
+    .header-left {
+        padding: 30px 40px 0px;
+    }
+    .hero-title h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .header-left .btn {
+        padding: 12px 20px;
+    }
+    .hero-img.pt-30 {
+        padding-top: 0px;
+    }
+    .blog-wrapper {
+        margin-top: 30px;
+    }
+    .d-none {
+        display: none;
+    }
+    .footer-nav ul li a {
+        margin-bottom: 30px;
+    }
+    .footer-nav.social-nav ul li a {
+       
+        margin: 0px 10px;
+      
+    }
+}
+/* tablet device  || medium device */
+@media only screen and (min-width: 768px) {
+   
+    .hero-title h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header-left {
+        padding: 30px;
+    }
+    .hero-img.pt-30 {
+        padding-top: 30px;
+    }
+    .hero-desc {
+        font-size: 14px;
+        height: 48px;
+        width: 316px;
+        overflow: hidden;
+    }
+    .hero-desc p {
+        text-overflow: ellipsis;
+    }
+    .card-top {
+        max-height: 200px;
+    }
+
+    /* menu group */
+    .menu-group {
+        display: flex;
+        align-items: center;
+    }
+    .menu-group .btn-link {
+        border-radius: none;
+        margin: 0px 10px;
+    }
+    .menu-group a:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    .d-md-none {
+        display: none;
+    }
+    .d-md-block {
+        display: block;
+    }
+}
+
+/* large device */
+@media only screen and (min-width: 992px) {
+    .hero-title h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .menu-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-group .btn-link {
+        border-radius: 10px;
+        margin: 20px 0px;
+    }
+    .blog-wrapper {
+        margin-top: 0px;
+    }
+    .d-lg-none {
+        display: none;
+    }
+    .d-lg-block {
+        display: block;
+    }
+}
+/* large device */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+    .header-left {
+        padding-left: 60px;
+    }
+    .hero-desc {
+        height: auto;
+    }
+}
+/* large device */
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    .hero-title h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .header-left {
+        padding-left: 60px;
+    }
+}
